@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+header {
+    background-color: red;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: green;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+
+.board {
+    box-shadow: 2px 2px 4px black;
+    height: 80vh;
+    width: 80vh;
+}
+
+.tools {
+    background-color: lightgrey;
+    border-radius: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1vh;
+    height: 50vh;
+    width: 10vh;
+    box-shadow: 2px 2px 4px 4px;
+}
+
+.tools button {
+    width: 8vh;
+    height: 8vh;
+    border-radius: 100%;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+.color-pick {
+    background-color: black;
+}
+
+.eraser {
+    background-image: url("img/eraser.png");
+    background-size: 5vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.clear {
+    background-image: url("img/clear.png");
+    background-size: 5vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.save {
+    background-image: url("img/save.png");
+    background-size: 5vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tools .resolution-pick {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 8vh;
+}
+
+.tools .resolution-pick select, .tools .resolution-pick select option {
+    border-radius: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer {
+    background-color: blue;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
