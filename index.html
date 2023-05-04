@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <script src="script.js" defer></script>
         <title>Etch A Sketch</title>
     </head>
     <body>
@@ -10,20 +12,20 @@
             <main>
                 <div class="board"></div>
                 <div class="tools">
-                    <button class="color-pick"></button>
-                    <button class="eraser"></button>
-                    <button class="clear"></button>
+                    <input type="color" id="color-pick" value="#444444" onchange="setColor()">
+                    <button class="eraser" onclick="setEraser()"></button>
+                    <button class="clear" onclick="clearBoard()"></button>
                     <button class="save"></button>
                     <div class="resolution-pick">
                         Resolution
-                        <select>
-                            <option value="1x1">1x1</option>
-                            <option value="2x2">2x2</option>
-                            <option value="4x4">4x4</option>
-                            <option value="8x8">8x8</option>
-                            <option value="16x16">16x16</option>
-                            <option value="32x32">32x32</option>
-                            <option value="64x64">64x64</option>
+                        <select id="resolution-selector" onchange="changeResolution()">
+                            <option value="1">1x1</option>
+                            <option value="2">2x2</option>
+                            <option value="4">4x4</option>
+                            <option value="8">8x8</option>
+                            <option value="16" selected="selected">16x16</option>
+                            <option value="32">32x32</option>
+                            <option value="64">64x64</option>
                         </select>
                     </div>
                 </div>

@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Montserrat;
+    font-weight: 800;
 }
 
 body {
@@ -11,15 +13,14 @@ body {
 }
 
 header {
-    background-color: red;
     height: 10vh;
+    font-size: 4vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 main {
-    background-color: green;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -28,6 +29,7 @@ main {
 }
 
 .board {
+    display: grid;
     box-shadow: 2px 2px 4px black;
     height: 80vh;
     width: 80vh;
@@ -44,6 +46,13 @@ main {
     height: 50vh;
     width: 10vh;
     box-shadow: 2px 2px 4px 4px;
+}
+
+.tools input {
+    width: 8vh;
+    height: 8vh;
+    border-radius: 10%;
+    box-shadow: 1px 1px 1px 1px;
 }
 
 .tools button {
@@ -94,7 +103,6 @@ main {
 }
 
 footer {
-    background-color: blue;
     height: 5vh;
     display: flex;
     justify-content: center;
@@ -102,6 +110,6 @@ footer {
 }
 
 a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
