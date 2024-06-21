@@ -15,8 +15,6 @@ function changeCellColor(e) {
 
 createCells(256, 32);
 let cells = document.querySelectorAll(".cell");
-console.log(cells.length);
-console.log(cells);
 for (let i = 0; i < cells.length; i++) {
     cells[i].addEventListener("mouseenter", (e) => changeCellColor(e));
 }
