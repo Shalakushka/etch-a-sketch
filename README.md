@@ -5,6 +5,7 @@ This github project is made regarding the ***Odin Project curriculum***.
 ## Overview
 
 This website allows you to draw an image using pixels.
+You can try it by clicking this [Live Preview](https://shalakushka.github.io/etch-a-sketch) link.
 
 ### Current state
 
